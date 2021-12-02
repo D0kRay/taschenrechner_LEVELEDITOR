@@ -4,12 +4,18 @@ public class TaschenrechnerModel {
     private int zweiterOperand;
     private String operator;
 
-    public int getErgebnis(){
-        int rueckgabe = 0;
+    public double getErgebnis(){
+        double rueckgabe = 0;
         if (operator.equals("+")){
             rueckgabe = ersterOperand + zweiterOperand;
         } else if (operator.equals("-")){
             rueckgabe = ersterOperand - zweiterOperand;
+        } else if (operator.equals("*")){
+            rueckgabe = ersterOperand * zweiterOperand;
+        } else if (operator.equals("/")){
+            rueckgabe = ersterOperand / zweiterOperand;
+        } else if (operator.equals("wurzel")){
+            rueckgabe = Math.sqrt(ersterOperand);
         } else {
             rueckgabe = zweiterOperand;
         }
