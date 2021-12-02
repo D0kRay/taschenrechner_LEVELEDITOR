@@ -40,14 +40,12 @@ public class TaschenrechnerView {
             }
         });
 
-
         zweibutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 erweitereAnzeige("2");
             }
         });
-
 
         dreibutton.addActionListener(new ActionListener() {
             @Override
@@ -56,14 +54,12 @@ public class TaschenrechnerView {
             }
         });
 
-
         vierbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 erweitereAnzeige("4");
             }
         });
-
 
         fuenfbutton.addActionListener(new ActionListener() {
             @Override
@@ -72,7 +68,6 @@ public class TaschenrechnerView {
             }
         });
 
-
         sechsbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -80,14 +75,12 @@ public class TaschenrechnerView {
             }
         });
 
-
         siebenbutton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 erweitereAnzeige("7");
             }
         });
-
 
         achtbutton.addActionListener(new ActionListener() {
             @Override
