@@ -10,15 +10,18 @@ public class HelloWorld {
     private JPanel mainPanel;
     private JTextField nameField;
     private JLabel anweisungLabel;
+    private JCheckBox informalCheckBox;
 
     public HelloWorld() {
         halloButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                String name = nameField.getText();
-                System.out.println(name);
-//                JOptionPane.showMessageDialog(halloButton, "Herzlich Willkommen!");
-                JOptionPane.showMessageDialog(halloButton, "Hallo " + name);
+                boolean informell = informalCheckBox.isSelected();
+                if (!informell){
+                    ausgabe("Yo, ");
+                } else {
+                    ausgabe("Herzlich Willkommen, ");
+                }
             }
         });
         nameField.addMouseListener(new MouseAdapter() {
@@ -33,6 +36,23 @@ public class HelloWorld {
                 nameField.setBackground(null);
             }
         });
+        nameField.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                boolean informell = informalCheckBox.isSelected();
+                if (!informell){
+                    ausgabe("Yo, ");
+                } else {
+                    ausgabe("Herzlich Willkommen, ");
+                }            }
+        });
+    }
+
+    private void ausgabe(String floskel){
+        String name = nameField.getText();
+        System.out.println(name);
+//                JOptionPane.showMessageDialog(halloButton, "Herzlich Willkommen!");
+        JOptionPane.showMessageDialog(halloButton, floskel + name);
     }
 
     public static void main(String[] args) {
