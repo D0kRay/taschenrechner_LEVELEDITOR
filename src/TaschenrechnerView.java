@@ -1,5 +1,3 @@
-import org.w3c.dom.ls.LSOutput;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -173,7 +171,6 @@ public class TaschenrechnerView {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
         frame.setVisible(true);
-        System.out.println("Lucienne");
     }
 
 }
