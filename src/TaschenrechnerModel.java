@@ -6,7 +6,6 @@ public class TaschenrechnerModel {
 
     public double getErgebnis(){
         double rueckgabe = 0;
-        System.out.println("Ergebnis: ");
         if (operator.equals("+")){
             rueckgabe = ersterOperand + zweiterOperand;
         } else if (operator.equals("-")){
@@ -20,7 +19,6 @@ public class TaschenrechnerModel {
         } else {
             rueckgabe = zweiterOperand;
         }
-        System.out.println(rueckgabe);
         return rueckgabe;
     }
 
